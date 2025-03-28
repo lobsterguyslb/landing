@@ -21,24 +21,28 @@
 </head>
 <body class="bg-gray-50">
     <!-- Header -->
-    <header class="bg-white shadow-sm fixed w-full top-0 z-50">
-        <nav class="container mx-auto px-4 py-3 flex items-center space-x-8">
-            <div class="flex items-center">
-                <img src="https://static.spotapps.co/website_images/ab_websites/117709_website/logo_new_2.png" alt="Logo" class="w-12 h-12 rounded-full">
-            </div>
-            <div class="hidden md:flex space-x-6">
-                <a href="#most-popular" class="text-gray-700 hover:text-red-600">Most Popular</a>
-                <a href="#rolls" class="text-gray-700 hover:text-red-600">Rolls</a>
-                <a href="#local-favorites" class="text-gray-700 hover:text-red-600">Local Favorites</a>
-                <a href="#soup" class="text-gray-700 hover:text-red-600">Soup</a>
-                <a href="#shrimp" class="text-gray-700 hover:text-red-600">Shrimp</a>
-            </div>
-            <div class="md:hidden">
+   <nav class="container mx-auto px-4 py-3 flex items-center justify-between">
+  <!-- Left: Logo + Desktop Links -->
+  <div class="flex items-center space-x-6">
+    <img src="https://static.spotapps.co/website_images/ab_websites/117709_website/logo_new_2.png" alt="Logo" class="w-12 h-12 rounded-full">
+
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex space-x-6">
+      <a href="#most-popular" class="text-gray-700 hover:text-red-600">Most Popular</a>
+      <a href="#rolls" class="text-gray-700 hover:text-red-600">Rolls</a>
+      <a href="#local-favorites" class="text-gray-700 hover:text-red-600">Local Favorites</a>
+      <a href="#soup" class="text-gray-700 hover:text-red-600">Soup</a>
+      <a href="#shrimp" class="text-gray-700 hover:text-red-600">Shrimp</a>
+    </div>
+  </div>
+
+  <!-- Right: Mobile Hamburger -->
+  <div class="md:hidden">
     <button class="text-gray-700" id="mobileMenuBtn">
-        <i class="fas fa-bars text-xl"></i>
+      <i class="fas fa-bars text-2xl"></i>
     </button>
-</div>
-        </nav>
+  </div>
+</nav>
         <!-- Mobile Menu -->
         <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
             <div class="container mx-auto px-4 py-2">
