@@ -367,7 +367,7 @@
     <!-- VIP Email Signup + Birthday Section -->
 <section class="py-16 bg-white">
   <div class="max-w-xl mx-auto px-4 text-center">
-    <!-- Brevo Fonts & Styles (can be moved to <head> if preferred) -->
+    <!-- Brevo Fonts & Styles-->
     <style>
       @font-face {
         font-display: block;
@@ -403,101 +403,123 @@
     </style>
     <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
 
-    <!-- Brevo Form Starts -->
-    <div class="sib-form" style="text-align:center; background-color: #EFF2F7;">
-      <div id="sib-form-container" class="sib-form-container">
-        <div id="sib-container" class="sib-container--large sib-container--vertical"
-          style="text-align:center; background-color:#ffffff; max-width:540px; border-radius:10px; border:1px solid #C0CCD9; margin: 0 auto;">
-          <form id="sib-form" method="POST"
-            action="https://sibforms.com/serve/MUIFAApWj3pdyaIGPUU-SUCLPmlu6r7mTKPLDZCWd5gELzuBxfeIOqPy0fFZOOCN6-FQxTNtG2G0Z8ZVIT6WahW0zIvbjPO1a6X_rYN9ssEK-_ekLcwLQ5yF1JswI1Sp-LjeBf025sxA9EvN-MVlHekajvLOE8Tbl8ahn_p4OT42mfa2x6Bfak70eRa4au1DQSTj7SnLX1QWl-vz">
-            
-            <!-- Header -->
-            <div style="padding: 8px 0;">
-              <div class="sib-form-block" style="font-size:24px; font-weight:700; font-family:Helvetica, sans-serif; color:#3C4858;">
-                Join our newsletter & VIP list!
-              </div>
-              <div class="sib-text-form-block" style="font-size:16px; color:#3C4858;">
-                Subscribe and get discounts, updates & a free cake on your birthday!
-              </div>
-            </div>
+    <!-- Begin Brevo Form -->
+<!-- START - We recommend to place the below code in head tag of your website html  -->
+<style>
+  @font-face {
+    font-display: block;
+    font-family: Roboto;
+    src: url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")
+  }
 
-            <!-- Email Field -->
-            <div style="padding: 8px 0;">
-              <div class="sib-input sib-form-block">
-                <div class="form__entry entry_block">
-                  <div class="form__label-row">
-                    <label class="entry__label" for="EMAIL">Email address</label>
-                    <div class="entry__field">
-                      <input class="input" type="text" id="EMAIL" name="EMAIL" placeholder="EMAIL" data-required="true" required />
-                    </div>
-                  </div>
-                  <label class="entry__error entry__error--primary"></label>
-                </div>
-              </div>
-            </div>
+  @font-face {
+    font-display: fallback;
+    font-family: Roboto;
+    font-weight: 600;
+    src: url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff")
+  }
 
-            <!-- Birthday Field -->
-            <div style="padding: 8px 0;">
-              <div class="sib-input sib-form-block">
-                <div class="form__entry">
-                  <div class="form__label-row">
-                    <label class="entry__label" for="BIRTHDAY">Want a free cake on your birthday? Enter it here!</label>
-                    <div class="entry__field">
-                      <input maxlength="200" type="text" data-type="date" class="input" pattern="^([0-2][0-9]|(3)[0-1])(-)(((0)[0-9])|((1)[0-2]))(-)\d{4}$"
-                        title="dd-mm-yyyy" data-format="dd-mm-yyyy" id="BIRTHDAY" name="BIRTHDAY" placeholder="dd-mm-yyyy" />
-                    </div>
-                  </div>
-                  <label class="entry__error entry__error--primary"></label>
-                </div>
-              </div>
-            </div>
+  @font-face {
+    font-display: fallback;
+    font-family: Roboto;
+    font-weight: 700;
+    src: url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")
+  }
 
-            <!-- Submit Button -->
-            <div style="padding: 16px 0;">
-              <button class="sib-form-block__button sib-form-block__button-with-loader"
-                style="font-size:16px; font-weight:700; font-family:Helvetica, sans-serif; color:#ffffff; background-color:#e3342f; border-radius:6px; padding: 12px 24px; border:none;"
-                form="sib-form" type="submit">
-                SUBSCRIBE
-              </button>
-            </div>
+  #sib-container input:-ms-input-placeholder {
+    text-align: left;
+    font-family: Helvetica, sans-serif;
+    color: #c0ccda;
+  }
 
-            <input type="text" name="email_address_check" value="" class="input--hidden">
-            <input type="hidden" name="locale" value="en">
-            <input type="hidden" name="html_type" value="simple">
-          </form>
+  #sib-container input::placeholder {
+    text-align: left;
+    font-family: Helvetica, sans-serif;
+    color: #c0ccda;
+  }
+
+  #sib-container a {
+    text-decoration: underline;
+    color: #2BB2FC;
+  }
+</style>
+<link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+<!--  END - We recommend to place the above code in head tag of your website html -->
+
+<!-- START - We recommend to place the below code where you want the form in your website html  -->
+<div class="sib-form" style="text-align: center;
+         background-color: #EFF2F7;                                           ">
+  <div id="sib-form-container" class="sib-form-container">
+    <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:3px; border-width:1px; border-color:#C0CCD9; border-style:solid;">
+      <form id="sib-form" method="POST" action="https://sibforms.com/serve/MUIFALD3bcW8VPkFIW0SydG9Wp2Nq7h7OfCYwjEdigFr9rYbqXu4_nCwt_3ZbFC0y2msXRi99sXZmVb8_IaeFt10uMPo4DFDftGaU6pNcdmUNvrnKFa0-4QWf-ivJUPsypjyrJvvrCD3ISm8R-NpORee8-kJbL17KHxMzc1mS-nBV6QMvKUoimcXM1GmBCVm7v4l7Fb-W6gDHUcb">
+        <div style="padding: 8px 0;">
+          <div class="sib-form-block" style="font-size:32px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#3C4858; background-color:transparent; text-align:left">
+            <p>Join our newsletter &amp; VIP list!</p>
+          </div>
         </div>
-      </div>
+        <div style="padding: 8px 0;">
+          <div class="sib-form-block" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#3C4858; background-color:transparent; text-align:left">
+            <div class="sib-text-form-block">
+              <p>Subscribe to our newsletter and stay updated and get discounts!</p>
+            </div>
+          </div>
+        </div>
+        <div style="padding: 8px 0;">
+          <div class="sib-input sib-form-block">
+            <div class="form__entry entry_block">
+              <div class="form__label-row ">
+                <label class="entry__label" style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#3c4858;" for="EMAIL" data-required="*">Enter your email address to join our VIP list</label>
+
+                <div class="entry__field">
+                  <input class="input " type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="EMAIL" data-required="true" required />
+                </div>
+              </div>
+
+              <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+              </label>
+              <label class="entry__specification" style="font-size:12px; text-align:left; font-family:Helvetica, sans-serif; color:#8390A4; text-align:left">
+                Provide your email address to subscribe. For e.g abc@xyz.com
+              </label>
+            </div>
+          </div>
+        </div>
+        <div style="padding: 8px 0;">
+
+          <div class="sib-input  sib-form-block">
+            <div class="form__entry">
+              <div class="form__label-row ">
+                <label class="entry__label" style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#3c4858;" for="BIRTHDAY">Want a free cake on your birthday? Enter it here!</label>
+                <div class="entry__field">
+                  <input maxlength="200" type="text" data-type="date" class="input " pattern="^([0-2][0-9]|(3)[0-1])(-)(((0)[0-9])|((1)[0-2]))(-)\d{4}$" title="dd-mm-yyyy" data-format="dd-mm-yyyy" id="BIRTHDAY" name="BIRTHDAY" autocomplete="off" placeholder="BIRTHDAY" />
+                </div>
+              </div>
+              <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+              </label>
+              <label class="entry__specification" style="font-size:12px; text-align:left; font-family:Helvetica, sans-serif; color:#8390A4; text-align:left">
+                dd-mm-yyyy
+              </label>
+            </div>
+          </div>
+        </div>
+        <div style="padding: 8px 0;">
+          <div class="sib-form-block" style="text-align: left">
+            <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-size:16px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#FFFFFF; background-color:#3E4857; border-radius:3px; border-width:0px;" form="sib-form" type="submit">
+              <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
+                <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
+              </svg>
+              SUBSCRIBE
+            </button>
+          </div>
+        </div>
+        <input type="text" name="email_address_check" value="" class="input--hidden">
+        <input type="hidden" name="locale" value="en">
+        <input type="hidden" name="html_type" value="simple">
+      </form>
     </div>
   </div>
-</section>
-    
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-3 gap-8">
-                <div>
-                    <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
-                    <p class="mb-2"><i class="fas fa-phone mr-2"></i>(562) 203-8888</p>
-                    <p class="mb-2"><i class="fas fa-envelope mr-2"></i> info@lobsterguys.com</p>
-                    <p><i class="fas fa-map-marker-alt mr-2"></i> 141 E Willow St, Unit Q, Long Beach, CA 90806</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold mb-4">Hours</h3>
-                    <p class="mb-2">Mondays - Sundays: 10am - 9pm</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
-                    <div class="flex space-x-4">
-                        <a href="https://www.facebook.com/lobsterguyslongbeach/" class="hover:text-red-600"><i class="fab fa-facebook-f text-2xl"></i></a>
-                        <a href="https://www.instagram.com/lobsterguyslb/" class="hover:text-red-600"><i class="fab fa-instagram text-2xl"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
-                <p>&copy; 2024 Lobster Guys Long Beach. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+</div>
+<!-- END - We recommend to place the above code where you want the form in your website html  -->
+<!-- End Brevo Form -->
 
     <script>
         // JavaScript for modal and menu functionality
