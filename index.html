@@ -367,7 +367,7 @@
     <!-- VIP Email Signup + Birthday Section -->
 <section class="py-16 bg-white">
   <div class="max-w-xl mx-auto px-4 text-center">
-    <!-- Brevo Form Header Styles (should ideally be placed in <head>, but repeated here for simplicity) -->
+    <!-- Brevo Fonts & Styles (can be moved to <head> if preferred) -->
     <style>
       @font-face {
         font-display: block;
@@ -389,21 +389,81 @@
         src: url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"),
              url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff");
       }
+
+      #sib-container input::placeholder {
+        text-align: left;
+        font-family: Helvetica, sans-serif;
+        color: #c0ccda;
+      }
+
+      #sib-container a {
+        text-decoration: underline;
+        color: #2BB2FC;
+      }
     </style>
     <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
 
-    <!-- Brevo Embed -->
+    <!-- Brevo Form Starts -->
     <div class="sib-form" style="text-align:center; background-color: #EFF2F7;">
       <div id="sib-form-container" class="sib-form-container">
-        <div id="sib-container"
-          class="sib-container--large sib-container--vertical"
-          style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:10px; border:1px solid #C0CCD9; margin: 0 auto;">
-          <!-- Embed code starts -->
-          <!-- just paste the form body from here down -->
-          <form id="sib-form" method="POST" action="https://sibforms.com/serve/MUIFAApWj3pdyaIGPUU-SUCLPmlu6r7mTKPLDZCWd5gELzuBxfeIOqPy0fFZOOCN6-FQxTNtG2G0Z8ZVIT6WahW0zIvbjPO1a6X_rYN9ssEK-_ekLcwLQ5yF1JswI1Sp-LjeBf025sxA9EvN-MVlHekajvLOE8Tbl8ahn_p4OT42mfa2x6Bfak70eRa4au1DQSTj7SnLX1QWl-vz">
-            <!-- your Brevo form body goes here -->
-            <!-- ...keep all the fields/buttons exactly as they are... -->
-            <!-- (for brevity, I won’t repeat it, but copy from the code you sent) -->
+        <div id="sib-container" class="sib-container--large sib-container--vertical"
+          style="text-align:center; background-color:#ffffff; max-width:540px; border-radius:10px; border:1px solid #C0CCD9; margin: 0 auto;">
+          <form id="sib-form" method="POST"
+            action="https://sibforms.com/serve/MUIFAApWj3pdyaIGPUU-SUCLPmlu6r7mTKPLDZCWd5gELzuBxfeIOqPy0fFZOOCN6-FQxTNtG2G0Z8ZVIT6WahW0zIvbjPO1a6X_rYN9ssEK-_ekLcwLQ5yF1JswI1Sp-LjeBf025sxA9EvN-MVlHekajvLOE8Tbl8ahn_p4OT42mfa2x6Bfak70eRa4au1DQSTj7SnLX1QWl-vz">
+            
+            <!-- Header -->
+            <div style="padding: 8px 0;">
+              <div class="sib-form-block" style="font-size:24px; font-weight:700; font-family:Helvetica, sans-serif; color:#3C4858;">
+                Join our newsletter & VIP list!
+              </div>
+              <div class="sib-text-form-block" style="font-size:16px; color:#3C4858;">
+                Subscribe and get discounts, updates & a free cake on your birthday!
+              </div>
+            </div>
+
+            <!-- Email Field -->
+            <div style="padding: 8px 0;">
+              <div class="sib-input sib-form-block">
+                <div class="form__entry entry_block">
+                  <div class="form__label-row">
+                    <label class="entry__label" for="EMAIL">Email address</label>
+                    <div class="entry__field">
+                      <input class="input" type="text" id="EMAIL" name="EMAIL" placeholder="EMAIL" data-required="true" required />
+                    </div>
+                  </div>
+                  <label class="entry__error entry__error--primary"></label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Birthday Field -->
+            <div style="padding: 8px 0;">
+              <div class="sib-input sib-form-block">
+                <div class="form__entry">
+                  <div class="form__label-row">
+                    <label class="entry__label" for="BIRTHDAY">Want a free cake on your birthday? Enter it here!</label>
+                    <div class="entry__field">
+                      <input maxlength="200" type="text" data-type="date" class="input" pattern="^([0-2][0-9]|(3)[0-1])(-)(((0)[0-9])|((1)[0-2]))(-)\d{4}$"
+                        title="dd-mm-yyyy" data-format="dd-mm-yyyy" id="BIRTHDAY" name="BIRTHDAY" placeholder="dd-mm-yyyy" />
+                    </div>
+                  </div>
+                  <label class="entry__error entry__error--primary"></label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div style="padding: 16px 0;">
+              <button class="sib-form-block__button sib-form-block__button-with-loader"
+                style="font-size:16px; font-weight:700; font-family:Helvetica, sans-serif; color:#ffffff; background-color:#e3342f; border-radius:6px; padding: 12px 24px; border:none;"
+                form="sib-form" type="submit">
+                SUBSCRIBE
+              </button>
+            </div>
+
+            <input type="text" name="email_address_check" value="" class="input--hidden">
+            <input type="hidden" name="locale" value="en">
+            <input type="hidden" name="html_type" value="simple">
           </form>
         </div>
       </div>
