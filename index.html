@@ -696,6 +696,14 @@
       });
     }
   </script>
+      <!-- 🔥 Track Phone Call Clicks -->
+  <script>
+    document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+      link.addEventListener('click', function() {
+        fbq('trackCustom', 'PhoneCallClick');
+      });
+    });
+  </script>
   <!-- End Custom Event Tracking -->
 </body>
 </html>
