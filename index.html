@@ -41,8 +41,6 @@
     <script>
   fbq('track', 'ViewContent');
 </script>
-
-
 </head>
 <body class="bg-gray-50">
     <!-- Header -->
@@ -663,5 +661,41 @@
             });
         });
     </script>
+        <!-- 🔥 Meta Pixel Custom Events -->
+  <script>
+    // Track "Order Now" clicks
+    document.querySelectorAll('a').forEach(link => {
+      if (link.textContent.includes('Order Now')) {
+        link.addEventListener('click', function() {
+          fbq('trackCustom', 'OrderNowClick');
+        });
+      }
+    });
+
+    // Track "See Full Menu"
+    const fullMenuBtn = document.querySelector('a[href*="square.site"]:not([target="_blank"])');
+    if (fullMenuBtn) {
+      fullMenuBtn.addEventListener('click', function() {
+        fbq('trackCustom', 'SeeFullMenuClick');
+      });
+    }
+
+    // Track "Sign Up Now" to Loyalty Program
+    const loyaltyLink = document.querySelector('a[href*="fivestars.com"]');
+    if (loyaltyLink) {
+      loyaltyLink.addEventListener('click', function() {
+        fbq('trackCustom', 'LoyaltySignupClick');
+      });
+    }
+
+    // Track Brevo form submit (subscribe)
+    const brevoForm = document.getElementById('sib-form');
+    if (brevoForm) {
+      brevoForm.addEventListener('submit', function() {
+        fbq('trackCustom', 'EmailSubscribe');
+      });
+    }
+  </script>
+  <!-- End Custom Event Tracking -->
 </body>
 </html>
